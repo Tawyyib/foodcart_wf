@@ -1,0 +1,247 @@
+        /* ---------- WIREFRAME STYLES (Minimal, Structural) ---------- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+        }
+
+        body {
+            background: #e9ecef;
+            padding: 30px 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto; 
+            background: white;
+            padding: 20px 30px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+            border-radius: 4px;
+        }
+
+        /* Wireframe box styles */
+        .wf-box { 
+            margin: 0;
+            border: 2px dashed #868e96;
+            padding: 16px;
+            border-radius: 4px;
+            background: #f8f9fa; 
+        }
+        
+        .wf-box-light {
+            border: 2px dashed #adb5bd;
+            padding: 12px;
+            margin-bottom: 0;
+            border-radius: 4px;
+            background: #fff;
+        }
+
+        .wf-wholesale {
+             border-color:#6c757d;
+             background:#f1f3f5;
+        }
+
+        .wf-label { font-size: 12px; font-weight: 600; color: #495057; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; display: block; }
+
+        .wf-label-sm {
+            font-size: 10px;
+            font-weight: 600;
+            color: #868e96;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+        }
+
+        .wf-label-text {
+            font-size: 18px;
+            font-weight: 700;
+            letter-spacing: 0.3px;
+        }
+
+        .signup-btn {
+            color: #0f172a;
+            padding: .5rem .75rem;
+            border-radius: .25rem;
+            font-size: 0.625rem;
+            font-weight: 500;
+            background:#dee2e6; 
+        }
+
+        .wf-placeholder {
+            background: #dee2e6;
+            height: 40px;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #495057;
+            font-size: 12px;
+        }
+
+        .hero-box {
+            height: 17.5rem;
+        }
+
+        .wf-placeholder.tall {
+            height: 120px;
+        }
+
+        .wf-placeholder.medium {
+            height: 80px;
+        }
+
+        .wf-placeholder.products {
+            height: 140px;
+        }
+
+        .wf-grid {
+            display: grid;
+            gap: 16px;
+        }
+
+        .wf-grid-2 { grid-template-columns: 1fr 1fr; }
+
+        .wf-grid-3 { grid-template-columns: 1fr 1fr 1fr; }
+
+        .wf-grid-4 {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+
+        .wf-flex {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .nav-wrap {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: .5rem;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .cart-wrap {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .wf-flex-space {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .wf-tag {
+            display: inline-block;
+            border: 1px solid #adb5bd;
+            padding: 2px 12px;
+            border-radius: 12px;
+            font-size: 10px; color: #495057;
+            background: white;
+            margin-right: 4px;
+        }
+
+        .wf-tag.jumbo {
+            border-color: #6c757d;
+            background: #e9ecef;
+        }
+
+        .wf-tag.kg50 { border-color: #495057; background: #dee2e6; }
+
+        .wf-divider { border-top: 2px dashed #dee2e6; margin: 20px 0; }
+
+        .wf-page-title {
+            margin: 0;
+            margin-bottom: 15px;
+            padding: 0;
+            font-size: .875rem;
+            font-weight: 400;
+            text-transform: capitalize;
+            color: #212529;
+            border-left: 0 solid #212529;
+        }
+
+        /* Responsive wireframe */
+        @media (max-width: 768px) {
+            .wf-grid-2, .wf-grid-3, .wf-grid-4 { grid-template-columns: 1fr; }
+            .container { padding: 16px; }
+            .wf-flex-space { flex-direction: column; align-items: flex-start; }
+        }
+
+        /* Page toggle via radio buttons */
+        .page-section {
+            display: none;
+        }
+
+        #w-home:checked ~ .page-home,
+        #w-shop:checked ~ .page-shop,
+        #w-pdp:checked ~ .page-pdp,
+        #w-cart:checked ~ .page-cart,
+        #w-checkout:checked ~ .page-checkout {
+            display: block;
+        }
+
+        input[type="radio"] {
+            display: none;
+        }
+
+        .nav-tabs {
+            margin: 0;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            border-bottom: 2px solid #dee2e6;
+        }
+
+        .nav-tabs label { 
+            display: inline-block;
+            padding: 8px 20px;
+            background: #f1f3f5;
+            border: 1px solid #dee2e6; 
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 400;
+            font-size: 12px;
+            color: #495057;
+        }
+
+        .nav-tabs label:hover {
+            background: #e9ecef; 
+        }
+
+        .nav-tabs label.active-radio {
+            background: #212529;
+            color: white;
+            border-color: #212529;
+        }
+
+        .wf-spacer {
+            margin: 0;
+            margin-top: 20px; 
+            margin-bottom: 20px; 
+        }
+
+        .wf-footer {
+            margin: 0;
+            border-color:#adb5bd;
+        }
+
+        .wf-footer-links {
+            color: #868e96;
+            font-size:12px;
+        }
+
+        .wf-copyright {
+            text-align: left;
+            font-size: 10px;
+            color: #868e96;
+        }

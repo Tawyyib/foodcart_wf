@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lagos Foods – Structural Wireframe</title>
+    <link rel="stylesheet" href="wireframe.css">
+    <script defer src="wireframe.js"></script>
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- WIREFRAME HEADER -->
+        <div class="wf-box">
+
+            <div class="wf-flex-space">
+
+                <div class="wf-logo">
+                    <span class="wf-label">[LOGO]</span>
+                    <span class="wf-label-text">Greencart Stores</span>
+                </div>
+
+                <div class="wf-flex">
+
+                    <div class="nav-wrap">
+                            
+                        <span class="wf-label-sm">[NAV: SEARCH]</span>
+                        <span class="wf-label-sm">[NAV: SHOP]</span>
+                        <!--<span class="wf-label-sm">[NAV: PRODUCT]</span>-->
+                        <span class="wf-label-sm">🛒 [CART ICON] (2)</span>
+                        
+                    </div>
+                    
+                    <div class="cart-wrap">
+                        <span class="wf-label-sm signup-btn" >B2B Account</span>
+                    </div>
+
+                </div>
+
+            </div>
+            
+        </div>
+
+        <!-- NAVIGATION TABS (To switch pages) -->
+        <input type="radio" name="wireframe" id="w-home" checked>
+        <input type="radio" name="wireframe" id="w-shop">
+        <input type="radio" name="wireframe" id="w-pdp">
+        <input type="radio" name="wireframe" id="w-cart">
+        <input type="radio" name="wireframe" id="w-checkout">
+
+        <div class="nav-tabs">
+            <label for="w-home" onclick="this.classList.add('active-radio')" class="active-radio">🏠 Homepage</label>
+            <label for="w-shop" onclick="this.classList.add('active-radio')">🛍️ Shop (Archive)</label>
+            <label for="w-pdp" onclick="this.classList.add('active-radio')">📄 Product (PDP)</label>
+            <label for="w-cart" onclick="this.classList.add('active-radio')">🛒 Cart</label>
+            <label for="w-checkout" onclick="this.classList.add('active-radio')">✅ Checkout</label>
+        </div>
+
+        <!-- ============================================ -->
+        <!-- PAGE 1: HOMEPAGE WIREFRAME -->
+        <!-- ============================================ -->
+        <div class="page-section page-home">
+
+            <div class="wf-page-title">🏠 Homepage  – Structural Wireframe</div>
+
+            <!-- Hero Section (Split) -->
+            <div class="wf-box">
+                <span class="wf-label">Hero Section (Split Layout)</span>
+                <div class="wf-grid wf-grid-2">
+                    <div class="wf-box-light">
+                        <span class="wf-label-sm">[RETAIL COLUMN]</span>
+                        <div class="wf-placeholder hero-box">Hero Headline + CTA (Retail)</div>
+                    </div>
+                    <div class="wf-box-light wf-wholesale">
+                        <span class="wf-label-sm">[WHOLESALE COLUMN]</span>
+                        <div class="wf-placeholder hero-box" style="background:#e9ecef;">Hero Headline + CTA (B2B Signup)</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category Grid -->
+            <div class="wf-box">
+                <span class="wf-label">CATEGORY GRID (3 items)</span>
+                <div class="wf-grid wf-grid-3">
+                    <div class="wf-placeholder medium">🍚 RICE</div>
+                    <div class="wf-placeholder medium">🫘 BEANS</div>
+                    <div class="wf-placeholder medium">🌾 GARRI</div>
+                </div>
+            </div>
+
+            <!-- ===== NEW: FEATURED PRODUCTS SECTION ===== -->
+            <div class="wf-box" style="border-color: #f59e0b;">
+                <span class="wf-label">🌟 Featured Products (Manual Pick)</span>
+                <div class="wf-grid wf-grid-3">
+                    <!-- Card 1: Rice -->
+                    <div class="wf-box-light" style="border: 3px solid #f59e0b; background: #fffcf0;">
+                        <div class="wf-placeholder" style="height:100px;">🍚 Rice Image</div>
+                        <div style="font-weight:700; font-size:18px;">NutraGold Rice</div>
+                        <div style="font-size:14px;">From ₦7,000 (5kg) to ₦59,000 (50kg)</div>
+                        <div class="wf-placeholder" style="height:36px; margin-top:8px; background:#f59e0b; color:white; font-weight:700;">[ View Product → ]</div>
+                    </div>
+                    <!-- Card 2: Honey Beans -->
+                    <div class="wf-box-light" style="border: 3px solid #f59e0b; background: #fffcf0;">
+                        <div class="wf-placeholder" style="height:100px;">🫘 Beans Image</div>
+                        <div style="font-weight:700; font-size:18px;">NutraGold Honey Beans</div>
+                        <div style="font-size:14px;">From ₦11,000 (5kg) to ₦83,000 (Jumbo)</div>
+                        <div class="wf-placeholder" style="height:36px; margin-top:8px; background:#f59e0b; color:white; font-weight:700;">[ View Product → ]</div>
+                    </div>
+                    <!-- Card 3: Garri -->
+                    <div class="wf-box-light" style="border: 3px solid #f59e0b; background: #fffcf0;">
+                        <div class="wf-placeholder" style="height:100px;">🌾 Garri Image</div>
+                        <div style="font-weight:700; font-size:18px;">NutraGold Premium Garri</div>
+                        <div style="font-size:14px;">From ₦7,000 (5kg) to ₦70,000 (Jumbo)</div>
+                        <div class="wf-placeholder" style="height:36px; margin-top:8px; background:#f59e0b; color:white; font-weight:700;">[ View Product → ]</div>
+                    </div>
+                </div>
+                <div style="font-size:12px; color:#868e96; margin-top:8px;">⚠️ Note: This section is manually curated. Links go directly to the Product Detail Page (PDP).</div>
+            </div>
+
+                        <!-- ===== WHY CHOOSE US + WHOLESALE CTA ===== -->
+            <div class="wf-box wf-spacer" style="border-color: #f59e0b;">
+
+                <!-- Row 1: Why Choose Us -->
+                <span class="wf-label">✅ Why Choose Foodcart</span>
+                <div class="wf-grid wf-grid-3">
+                    <div class="wf-box-light" style="text-align:center; padding:16px;">
+                        <div style="font-size:2rem;">🚚</div>
+                        <div style="font-weight:700;">Same-Day Delivery</div>
+                        <div style="font-size:13px; color:#495057;">Lagos-wide delivery within hours. Real-time tracking available.</div>
+                    </div>
+                    <div class="wf-box-light" style="text-align:center; padding:16px;">
+                        <div style="font-size:2rem;">📦</div>
+                        <div style="font-weight:700;">Wholesale Prices</div>
+                        <div style="font-size:13px; color:#495057;">Exclusive B2B rates for registered retailers. Bulk discounts available.</div>
+                    </div>
+                    <div class="wf-box-light" style="text-align:center; padding:16px;">
+                        <div style="font-size:2rem;">🛡️</div>
+                        <div style="font-weight:700;">Quality Guaranteed</div>
+                        <div style="font-size:13px; color:#495057;">Sourced from trusted farms. Premium packaging for freshness.</div>
+                    </div>
+                </div>
+
+                <!-- Divider -->
+                <div class="wf-divider"></div>
+
+                <!-- Row 2: Wholesale CTA Banner (Subtle) -->
+                <div class="wf-box-light" style="background:#fef3c7; border:2px dashed #f59e0b; text-align:center; padding:12px;">
+                    <span class="wf-label-sm" style="color:#b45309;">📢 WHOLESALE OPPORTUNITY</span>
+                    <div style="font-size:14px; font-weight:600;">Register as a retailer today and unlock exclusive bulk pricing on all products.</div>
+                    <div class="wf-placeholder" style="height:36px; max-width:200px; margin:8px auto 0; background:#f59e0b; color:white; font-weight:700;">[ Sign Up Now → ]</div>
+                </div>
+            </div>
+
+            <!-- Best Sellers -->
+            <div class="wf-box wf-spacer">
+
+                <span class="wf-label">Best Selling Products (4 cols)</span>
+
+                <div class="wf-grid wf-grid-4">
+
+                    <div class="wf-box-light">
+                        <div class="wf-placeholder products">Product Image</div>
+                        <div>Title</div>
+                        <div>Price Range</div>
+                        <div class="wf-flex">
+                            <span class="wf-tag">5kg</span>
+                            <span class="wf-tag">10kg</span>
+                            <span class="wf-tag">25kg</span>
+                            <span class="wf-tag kg50">50kg Bag</span>
+                        </div>
+                    </div>
+
+                    <div class="wf-box-light">
+                        <div class="wf-placeholder products">Product Image</div>
+                        <div>Title</div>
+                        <div>Price Range</div>
+                        <div class="wf-flex">
+                            <span class="wf-tag">5kg</span>
+                            <span class="wf-tag">10kg</span>
+                            <span class="wf-tag">25kg</span>
+                            <span class="wf-tag jumbo">Jumbo Pack</span>
+                        </div>
+                    </div>
+
+                    <div class="wf-box-light">
+                        <div class="wf-placeholder products">Product Image</div>
+                        <div>Title</div>
+                        <div>Price Range</div>
+                        <div class="wf-flex">
+                            <span class="wf-tag">5kg</span>
+                            <span class="wf-tag">10kg</span>
+                            <span class="wf-tag">25kg</span>
+                            <span class="wf-tag jumbo">Jumbo Pack</span>
+                        </div>
+                    </div>
+
+                    <div class="wf-box-light">
+                        <div class="wf-placeholder products">Product Image</div>
+                        <div>Title</div>
+                        <div>Price Range</div>
+                        <div class="wf-flex">
+                            <span class="wf-tag">5kg</span>
+                            <span class="wf-tag">10kg</span>
+                            <span class="wf-tag">25kg</span>
+                            <span class="wf-tag jumbo">Jumbo Pack</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Trust Badges -->
+            <div class="wf-box wf-spacer">
+                <span class="wf-label">Trust Badges (Paystack, Flutterwave, GIG, RouteLift)</span>
+                <div class="wf-flex" style="justify-content:center; gap:30px;">
+                    <span class="wf-tag">Paystack</span>
+                    <span class="wf-tag">Flutterwave</span>
+                    <span class="wf-tag">GIG Logistics</span>
+                    <span class="wf-tag">RouteLift</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- ============================================ -->
+        <!-- PAGE 2: SHOP (ARCHIVE) WIREFRAME -->
+        <!-- ============================================ -->
+        <div class="page-section page-shop">
+            <div class="wf-page-title">🛍️ Shop Page – Structural Wireframe</div>
+            <div class="wf-grid wf-grid-2" style="grid-template-columns: 220px 1fr;">
+                <!-- Sidebar -->
+                <div class="wf-box">
+                    <span class="wf-label">SIDEBAR (Filters)</span>
+                    <div class="wf-box-light"><span class="wf-label-sm">Filter by Price</span><div class="wf-placeholder" style="height:20px;">Slider</div></div>
+                    <div class="wf-box-light"><span class="wf-label-sm">Categories</span><div>🍚 Rice</div><div>🫘 Beans</div><div>🌾 Garri</div></div>
+                </div>
+                <!-- Main Grid -->
+                <div>
+                    <div class="wf-flex-space">
+                        <span class="wf-label-sm">[Results Count: 1-4 of 5]</span>
+                        <span class="wf-label-sm">[Sort By Dropdown]</span>
+                    </div>
+                    <div class="wf-grid wf-grid-3" style="margin-top:12px;">
+                        <div class="wf-box-light"><div class="wf-placeholder" style="height:80px;">Image</div><div>Rice</div><div>₦7k - ₦59k</div><div><span class="wf-tag">5kg</span><span class="wf-tag">10kg</span><span class="wf-tag">25kg</span><span class="wf-tag kg50">50kg Bag</span></div></div>
+                        <div class="wf-box-light"><div class="wf-placeholder" style="height:80px;">Image</div><div>Honey Beans</div><div>₦11k - ₦83k</div><div><span class="wf-tag">5kg</span><span class="wf-tag">10kg</span><span class="wf-tag">25kg</span><span class="wf-tag jumbo">Jumbo</span></div></div>
+                        <div class="wf-box-light"><div class="wf-placeholder" style="height:80px;">Image</div><div>Premium Garri</div><div>₦7k - ₦70k</div><div><span class="wf-tag">5kg</span><span class="wf-tag">10kg</span><span class="wf-tag">25kg</span><span class="wf-tag jumbo">Jumbo</span></div></div>
+                    </div>
+                    <div class="wf-box" style="margin-top:12px;"><span class="wf-label-sm">[PAGINATION]</span></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ============================================ -->
+        <!-- PAGE 3: PRODUCT DETAIL (PDP) WIREFRAME -->
+        <!-- ============================================ -->
+        <div class="page-section page-pdp">
+            <div class="wf-page-title">📄 Product Detail Page (PDP) – Structural Wireframe</div>
+            <div class="wf-grid wf-grid-2" style="grid-template-columns: 1fr 1.5fr;">
+                <!-- Gallery -->
+                <div class="wf-box">
+                    <span class="wf-label">PRODUCT GALLERY</span>
+                    <div class="wf-placeholder tall" style="height:250px;">Main Image</div>
+                    <div class="wf-flex" style="margin-top:8px;">
+                        <div class="wf-placeholder" style="height:50px; width:50px;">Thumb</div>
+                        <div class="wf-placeholder" style="height:50px; width:50px;">Thumb</div>
+                        <div class="wf-placeholder" style="height:50px; width:50px;">Thumb</div>
+                    </div>
+                </div>
+                <!-- Summary -->
+                <div class="wf-box">
+                    <span class="wf-label">PRODUCT SUMMARY</span>
+                    <div><strong style="font-size:20px;">NutraGold Rice</strong></div>
+                    <div class="wf-label-sm">SKU: RICE-001</div>
+                    <div style="font-size:24px; font-weight:700; margin:8px 0;">₦7,000 – ₦59,000</div>
+                    
+                    <div class="wf-box-light" style="border-color:#6c757d; background:#f1f3f5;">
+                        <span class="wf-label-sm">[WHOLESALE PROMPT – GUEST USERS]</span>
+                        <div style="font-size:12px;">"Register as a retailer to unlock bulk discounts."</div>
+                    </div>
+
+                    <div class="wf-box-light">
+                        <span class="wf-label-sm">VARIATION SELECTOR (Weight)</span>
+                        <div class="wf-placeholder" style="height:40px;">Dropdown: 5kg | 10kg | 25kg | 50kg Bag</div>
+                    </div>
+
+                    <div class="wf-flex">
+                        <div class="wf-placeholder" style="width:60px; height:40px;">Qty</div>
+                        <div class="wf-placeholder" style="width:120px; height:40px;">[Add to Cart]</div>
+                        <div class="wf-placeholder" style="width:100px; height:40px;">[Buy Now]</div>
+                    </div>
+
+                    <div class="wf-divider"></div>
+                    <div class="wf-label-sm">DESCRIPTION</div>
+                    <div style="font-size:13px; color:#495057;">Premium stone-free rice. Available in retail and wholesale packs.</div>
+                    <div class="wf-label-sm" style="margin-top:12px;">SHIPPING NOTE</div>
+                    <div style="font-size:12px; background:#f1f3f5; padding:8px;">🚚 Same-day within Lagos. Fee calculated at checkout based on LGA.</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ============================================ -->
+        <!-- PAGE 4: CART WIREFRAME -->
+        <!-- ============================================ -->
+        <div class="page-section page-cart">
+            <div class="wf-page-title">🛒 Cart – Structural Wireframe</div>
+
+            <div class="wf-cart-content">
+
+                <div class="wf-box">
+                    <span class="wf-label">CART TABLE</span>
+                    <table style="width:100%; border-collapse:collapse; border:1px solid #dee2e6;">
+                        <thead style="background:#f1f3f5;"><tr><th style="padding:8px; text-align:left; font-size:12px;">Product</th><th style="padding:8px; text-align:left; font-size:12px;">Price</th><th style="padding:8px; text-align:left; font-size:12px;">Qty</th><th style="padding:8px; text-align:left; font-size:12px;">Subtotal</th><th style="padding:8px; text-align:left; font-size:12px;"></th></tr></thead>
+                        <tbody>
+                            <tr><td style="padding:8px; border-top:1px solid #dee2e6;">Rice (5kg) x2</td><td style="padding:8px; border-top:1px solid #dee2e6;">₦7,000</td><td style="padding:8px; border-top:1px solid #dee2e6;"><div class="wf-placeholder" style="width:50px; height:30px;">2</div></td><td style="padding:8px; border-top:1px solid #dee2e6;">₦14,000</td><td style="padding:8px; border-top:1px solid #dee2e6;">✕</td></tr>
+                            <tr><td style="padding:8px; border-top:1px solid #dee2e6;">Honey Beans (Jumbo) x1</td><td style="padding:8px; border-top:1px solid #dee2e6;">₦83,000</td><td style="padding:8px; border-top:1px solid #dee2e6;"><div class="wf-placeholder" style="width:50px; height:30px;">1</div></td><td style="padding:8px; border-top:1px solid #dee2e6;">₦83,000</td><td style="padding:8px; border-top:1px solid #dee2e6;">✕</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Progress Bar -->
+                <div class="wf-box">
+                    <span class="wf-label">FREE DELIVERY PROGRESS</span>
+                    <div style="font-size:13px;">🎯 Add ₦53,000 more to qualify for Free Delivery</div>
+                    <div style="height:10px; background:#dee2e6; border-radius:4px; margin-top:4px;"><div style="width:45%; height:10px; background:#495057; border-radius:4px;"></div></div>
+                </div>
+
+            </div>
+
+            <!-- Totals -->
+            <div class="wf-box">
+                <span class="wf-label">CART TOTALS</span>
+                <div style="max-width:400px; margin-left:auto;">
+                    <div class="wf-flex-space"><span>Subtotal:</span><span>₦97,000</span></div>
+                    <div class="wf-flex-space"><span>Delivery (Ikeja LGA):</span><span>₦700</span></div>
+                    <div class="wf-divider"></div>
+                    <div class="wf-flex-space" style="font-size:20px; font-weight:700;"><span>Total:</span><span>₦97,700</span></div>
+                    <div class="wf-placeholder" style="height:44px; margin-top:8px;">[Proceed to Checkout Button]</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ============================================ -->
+        <!-- PAGE 5: CHECKOUT WIREFRAME -->
+        <!-- ============================================ -->
+        <div class="page-section page-checkout">
+            <div class="wf-page-title">✅ Checkout – Structural Wireframe</div>
+            <div class="wf-grid wf-grid-2">
+                <!-- Billing Form -->
+                <div class="wf-box">
+                    <span class="wf-label">BILLING DETAILS</span>
+                    <div class="wf-box-light"><span class="wf-label-sm">Full Name *</span><div class="wf-placeholder" style="height:30px;">[Input]</div></div>
+                    <div class="wf-box-light"><span class="wf-label-sm">Email *</span><div class="wf-placeholder" style="height:30px;">[Input]</div></div>
+                    <div class="wf-box-light"><span class="wf-label-sm">Phone *</span><div class="wf-placeholder" style="height:30px;">[Input]</div></div>
+                    <div class="wf-box-light"><span class="wf-label-sm">Street / Bus Stop *</span><div class="wf-placeholder" style="height:30px;">[Input]</div></div>
+
+                    <!-- CRITICAL: LGA -->
+                    <div class="wf-box-light" style="border-color:#212529; border-width:3px; background:#f8f9fa;">
+                        <span class="wf-label-sm" style="font-weight:700; color:#212529;">LOCAL GOVT AREA (LGA) *</span>
+                        <div class="wf-placeholder" style="height:30px;">[Dropdown: Ikeja, Surulere, Eti-Osa...]</div>
+                    </div>
+
+                    <!-- CRITICAL: Landmark -->
+                    <div class="wf-box-light" style="border-color:#212529; border-width:3px; background:#f8f9fa;">
+                        <span class="wf-label-sm" style="font-weight:700; color:#212529;">LANDMARK / NEAREST JUNCTION *</span>
+                        <div class="wf-placeholder" style="height:30px;">[Input: e.g. Beside Total Filling Station]</div>
+                    </div>
+
+                    <div class="wf-box-light"><span class="wf-label-sm">Delivery Speed</span><div class="wf-placeholder" style="height:30px;">[Dropdown: Express vs Standard]</div></div>
+
+                    <div class="wf-box-light">
+                        <span class="wf-label-sm">Payment Method</span>
+                        <div class="wf-flex"><span class="wf-tag">Card</span><span class="wf-tag">Bank Transfer</span><span class="wf-tag">USSD</span><span class="wf-tag">Cash on Delivery</span></div>
+                        <div class="wf-placeholder" style="height:60px; margin-top:8px;">[Paystack/Flutterwave iframe placeholder]</div>
+                    </div>
+                </div>
+
+                <!-- Order Summary (Sticky) -->
+                <div class="wf-box" style="border-color:#495057; background:#f8f9fa; position:sticky; top:20px;">
+                    <span class="wf-label">ORDER SUMMARY</span>
+                    <div class="wf-flex-space"><span>Rice (5kg) x2</span><span>₦14,000</span></div>
+                    <div class="wf-flex-space"><span>Honey Beans (Jumbo) x1</span><span>₦83,000</span></div>
+                    <div class="wf-divider"></div>
+                    <div class="wf-flex-space"><span>Subtotal</span><span>₦97,000</span></div>
+                    <div class="wf-flex-space"><span>🚚 Express (Ikeja)</span><span>₦700</span></div>
+                    <div class="wf-divider"></div>
+                    <div class="wf-flex-space" style="font-size:24px; font-weight:700;"><span>Total</span><span>₦97,700</span></div>
+                    <div class="wf-placeholder" style="height:48px; margin-top:12px;">[PLACE ORDER BUTTON]</div>
+                    <div style="text-align:center; font-size:11px; color:#868e96; margin-top:4px;">🔒 Secure transaction</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- WIREFRAME FOOTER -->
+        <div class="wf-box wf-footer">
+
+            <div class="wf-grid wf-grid-4">
+
+                <div>
+
+                    <span class="wf-label-sm">[LOGO] Lagos Foodcart</span>
+                    <br>
+                    <span class="wf-footer-links">Packaged food retail & wholesale, Lagos.</span>
+
+                </div>
+
+                <div>
+
+                    <span class="wf-label-sm">About Us</span>
+                    <br>
+                    <span class="wf-footer-links">Shop | Wholesale Registration | My Account</span>
+
+                </div>
+
+                <div>
+                    
+                    <span class="wf-label-sm">Help & Support</span>
+                    <br>
+                    <span class="wf-footer-links">Shop | Wholesale Registration | My Account</span>
+
+                </div>
+
+                <div>
+
+                    <span class="wf-label-sm">Trusted Payments</span>
+                    <br>
+                    <span style="font-size:12px;">✅ Paystack | ✅ Flutterwave | 🚚 GIG | 🛵 RouteLift</span>
+
+                </div>
+
+            </div>
+
+            <div class="wf-divider"></div>
+
+            <div class="wf-copyright">© 2026 Foodcart. Wireframe v1.0 – Structural Blueprint</div>
+
+        </div>
+
+    </div>
+</body>
+</html>
