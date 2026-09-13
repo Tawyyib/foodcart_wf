@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lagos Food Store - Wireframe Sketch</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', system-ui, sans-serif; }
+        body { background: #e9ecef; padding: 20px; }
+        .page-container { max-width: 1280px; margin: 0 auto; }
+        
+        /* Page Tabs */
+        .page-tab { 
+            display: inline-block; background: #1a1a2e; color: white; padding: 8px 24px; 
+            border-radius: 30px 30px 0 0; font-weight: 600; font-size: 14px; margin-top: 40px;
+        }
+        .wireframe-card {
+            background: white; border-radius: 0 16px 16px 16px; padding: 30px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.08); margin-bottom: 50px;
+        }
+        .grid-2col { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+        @media (max-width: 800px) { .grid-2col { grid-template-columns: 1fr; } }
+        
+        /* Mockup frames */
+        .mockup-mobile {
+            background: #f8f9fa; border-radius: 24px; padding: 16px; border: 1px solid #dee2e6;
+            max-width: 360px; margin: 0 auto; box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+        .mockup-desktop {
+            background: #f8f9fa; border-radius: 12px; padding: 20px; border: 1px solid #dee2e6;
+            min-height: 400px; box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+        .screen-title { text-align: center; font-weight: 700; color: #495057; margin-bottom: 16px; font-size: 13px; letter-spacing: 0.5px; }
+
+        /* Reusable UI blocks (wireframe style) */
+        .block { background: white; border-radius: 8px; padding: 12px; margin-bottom: 10px; border: 1.5px dashed #adb5bd; }
+        .block-solid { border: 1.5px solid #dee2e6; background: #f1f3f5; }
+        .img-placeholder { background: #e9ecef; height: 60px; border-radius: 6px; display: flex; align-items: center; justify-content: center; color: #868e96; font-size: 12px; }
+        .img-placeholder.tall { height: 140px; }
+        .row { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+        .row .grow { flex: 1; }
+        .badge { background: #2b8a3e; color: white; font-size: 10px; padding: 2px 10px; border-radius: 20px; display: inline-block; }
+        .badge.orange { background: #e67700; }
+        .price-lg { font-weight: 700; color: #1a1a2e; font-size: 18px; }
+        .price-sm { color: #868e96; font-size: 13px; text-decoration: line-through; }
+        .btn { background: #1a1a2e; color: white; padding: 8px 16px; border-radius: 6px; display: inline-block; font-size: 13px; text-align: center; border: none; }
+        .btn.green { background: #2b8a3e; }
+        .btn.outline { background: transparent; border: 2px solid #1a1a2e; color: #1a1a2e; }
+        .divider { height: 1px; background: #dee2e6; margin: 12px 0; }
+        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+        .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; }
+        
+        .label-tag { background: #e9ecef; padding: 2px 10px; border-radius: 4px; font-size: 10px; color: #495057; }
+        .flex { display: flex; align-items: center; gap: 8px; }
+        .mt-2 { margin-top: 10px; }
+        
+        h3 { font-size: 16px; margin-bottom: 12px; color: #212529; border-left: 4px solid #2b8a3e; padding-left: 12px; }
+        h4 { font-size: 13px; color: #495057; margin: 8px 0; }
+    </style>
+</head>
+<body>
+<div class="page-container">
+
+    <!-- ============================================ -->
+    <!-- PAGE 1: HOMEPAGE -->
+    <!-- ============================================ -->
+    <div class="page-tab">📱 HOME PAGE</div>
+    <div class="wireframe-card">
+        <div class="grid-2col">
+            <!-- Mobile -->
+            <div class="mockup-mobile">
+                <div class="screen-title">📱 MOBILE (Primary)</div>
+                <!-- Sticky Header -->
+                <div class="block block-solid flex" style="justify-content:space-between;">
+                    <span style="font-weight:bold;">🍱 LOGO</span>
+                    <span>🔍</span>
+                    <span>🛒 (2)</span>
+                </div>
+                <!-- Hero -->
+                <div class="block img-placeholder tall" style="background:#d0bfff; color:#5f3dc4;">📸 Hero Slide: "Wholesale Prices Lagos"</div>
+                <!-- Category Grid -->
+                <div class="block">
+                    <div class="grid-3">
+                        <div class="img-placeholder" style="height:50px;">🍪 Snacks</div>
+                        <div class="img-placeholder" style="height:50px;">🥤 Drinks</div>
+                        <div class="img-placeholder" style="height:50px;">🍚 Staples</div>
+                        <div class="img-placeholder" style="height:50px;">🧂 Spices</div>
+                        <div class="img-placeholder" style="height:50px;">🥫 Canned</div>
+                        <div class="img-placeholder" style="height:50px;">🍞 Bakery</div>
+                    </div>
+                </div>
+                <!-- Best Sellers -->
+                <div class="block">
+                    <div class="flex" style="justify-content:space-between;"><span><strong>🔥 Best Sellers</strong></span><span style="color:#2b8a3e;">View all →</span></div>
+                    <div class="grid-2 mt-2">
+                        <div class="block-solid" style="padding:8px;"><div class="img-placeholder" style="height:40px;">📦</div><span style="font-size:11px;">Indomie Noodles</span><br><span class="price-sm">₦500</span> <span class="price-lg">₦430</span> <span class="badge">Wholesale</span></div>
+                        <div class="block-solid" style="padding:8px;"><div class="img-placeholder" style="height:40px;">📦</div><span style="font-size:11px;">Milo 500g</span><br><span class="price-sm">₦1,200</span> <span class="price-lg">₦1,050</span> <span class="badge">Wholesale</span></div>
+                    </div>
+                </div>
+                <!-- Trust Strip -->
+                <div class="block block-solid flex" style="justify-content:space-around; font-size:10px; color:#495057;">
+                    <span>✅ Paystack</span> <span>✅ Flutterwave</span> <span>🚚 GIG Logistics</span>
+                </div>
+            </div>
+
+            <!-- Desktop -->
+            <div class="mockup-desktop">
+                <div class="screen-title">🖥️ DESKTOP</div>
+                <!-- Full Header -->
+                <div class="block block-solid flex" style="justify-content:space-between;">
+                    <span style="font-weight:bold; font-size:20px;">🍱 LOGO</span>
+                    <span style="background:white; padding:4px 20px; border-radius:30px; border:1px solid #ccc;">🔍 Search for products (SKU, Name)...</span>
+                    <span>🛒 Cart (3) | Wholesale Toggle: ON</span>
+                </div>
+                <!-- Hero wide -->
+                <div class="block img-placeholder" style="height:120px; background:#d0bfff;">📸 Wide Hero: "Bulk Food Supplies – Same Day Lagos"</div>
+                <!-- Category + Products -->
+                <div class="row">
+                    <div style="flex:1;"><h4>📂 Categories</h4><div class="block-solid" style="padding:8px;">Beverages<br>Snacks<br>Grains<br>Dairy<br>Canned</div></div>
+                    <div style="flex:3;"><h4>🛍️ Wholesale Deals</h4><div class="row"><div class="block-solid" style="padding:10px; flex:1;">📦 Indomie (Carton)<br><span class="price-lg">₦4,300</span></div><div class="block-solid" style="padding:10px; flex:1;">📦 Milo (6pk)<br><span class="price-lg">₦6,200</span></div><div class="block-solid" style="padding:10px; flex:1;">📦 Groundnut Oil 5L<br><span class="price-lg">₦8,500</span></div></div></div>
+                </div>
+                <div class="block block-solid flex" style="justify-content:space-around; font-size:12px; margin-top:10px;">✅ Paystack ✅ Flutterwave 🚚 RouteLift 🛵 Konga</div>
+            </div>
+        </div>
+        <div style="margin-top:16px; background:#f8f9fa; padding:12px; border-radius:8px; font-size:13px; color:#495057;">
+            <strong>🔧 Dev Notes:</strong> Sticky search header • AJAX category filters • Dual pricing (Retail/Wholesale) displayed on every card.
+        </div>
+    </div>
+
+    <!-- ============================================ -->
+    <!-- PAGE 2: PRODUCT DETAIL (PDP) -->
+    <!-- ============================================ -->
+    <div class="page-tab">📄 PRODUCT DETAIL PAGE</div>
+    <div class="wireframe-card">
+        <div class="grid-2col">
+            <!-- Mobile -->
+            <div class="mockup-mobile">
+                <div class="screen-title">📱 MOBILE PDP</div>
+                <div class="block block-solid flex" style="justify-content:space-between;"><span>← Back</span><span>🍱 LOGO</span><span>🛒</span></div>
+                <!-- Gallery -->
+                <div class="block img-placeholder tall" style="background:#e9ecef;">📸 Main Product Image (swipe left/right)</div>
+                <div class="row" style="justify-content:center; gap:6px;"><span style="width:10px;height:10px;border-radius:50%;background:#2b8a3e;"></span><span style="width:10px;height:10px;border-radius:50%;background:#ccc;"></span><span style="width:10px;height:10px;border-radius:50%;background:#ccc;"></span></div>
+                <!-- Title & SKU -->
+                <div class="block"><strong>Indomie Noodles (Carton of 40)</strong><br><span style="color:#868e96; font-size:12px;">SKU: FMCG-IND-001</span><br><span class="badge" style="background:#e67700;">In Stock – Lagos Warehouse</span></div>
+                <!-- Price Table (Critical) -->
+                <div class="block" style="background:#f1f3f5;">
+                    <strong>💰 Bulk Pricing (per unit)</strong>
+                    <div class="flex" style="justify-content:space-between; font-size:12px; border-bottom:1px solid #ccc; padding:4px 0;"><span>1 – 9 units</span><span>₦500 / unit</span></div>
+                    <div class="flex" style="justify-content:space-between; font-size:12px; border-bottom:1px solid #ccc; padding:4px 0;"><span>10 – 49 units</span><span>₦430 / unit</span> <span class="badge">Save 14%</span></div>
+                    <div class="flex" style="justify-content:space-between; font-size:12px; padding:4px 0;"><span>50+ units</span><span>₦390 / unit</span> <span class="badge orange">Best Deal</span></div>
+                </div>
+                <!-- Add to cart -->
+                <div class="block">
+                    <div class="flex"><span>QTY:</span> <span style="border:1px solid #ccc; padding:0 12px;">- 1 +</span></div>
+                    <div class="row" style="margin-top:8px;"><span class="btn green" style="flex:2; text-align:center;">➕ Add to Cart</span><span class="btn outline" style="flex:1; text-align:center;">⚡ Buy Now</span></div>
+                </div>
+                <!-- Tabs -->
+                <div class="block"><span class="label-tag">Description</span> <span class="label-tag">Nutrition</span> <span class="label-tag">Shipping</span><br><span style="font-size:12px; color:#495057;">Premium quality noodles. Shelf life: 12 months. Free delivery for bulk orders in Lagos.</span></div>
+            </div>
+
+            <!-- Desktop -->
+            <div class="mockup-desktop">
+                <div class="screen-title">🖥️ DESKTOP PDP</div>
+                <div class="row" style="align-items:flex-start;">
+                    <div style="flex:1;"><div class="img-placeholder" style="height:200px;">📸 Main Image</div><div class="row" style="margin-top:6px;"><div class="img-placeholder" style="height:40px; flex:1;">Thumb</div><div class="img-placeholder" style="height:40px; flex:1;">Thumb</div><div class="img-placeholder" style="height:40px; flex:1;">Thumb</div></div></div>
+                    <div style="flex:1.5; padding-left:16px;">
+                        <h3 style="border-left-color:#e67700;">Indomie Noodles (Carton of 40)</h3>
+                        <span style="color:#868e96;">SKU: FMCG-IND-001</span><br><span class="badge" style="background:#2b8a3e;">Ready for Same-Day Dispatch</span>
+                        <div style="background:#f1f3f5; padding:12px; border-radius:8px; margin:12px 0;">
+                            <table style="width:100%; font-size:13px; border-collapse:collapse;">
+                                <tr style="border-bottom:1px solid #ccc;"><td>1 – 9 units</td><td>₦500 / unit</td><td></td></tr>
+                                <tr style="border-bottom:1px solid #ccc;"><td>10 – 49 units</td><td>₦430 / unit</td><td><span class="badge">Save 14%</span></td></tr>
+                                <tr><td>50+ units</td><td><strong>₦390 / unit</strong></td><td><span class="badge orange">Best Deal</span></td></tr>
+                            </table>
+                        </div>
+                        <div class="flex"><span>QTY:</span> <span style="border:1px solid #ccc; padding:0 16px;">- 10 +</span></div>
+                        <div class="row" style="margin-top:10px;"><span class="btn green" style="padding:10px 30px;">➕ Add to Cart</span><span class="btn outline" style="padding:10px 30px;">⚡ Quick Buy</span></div>
+                        <div style="margin-top:12px; font-size:12px; color:#495057;"><strong>📦 Shipping:</strong> ₦2,500 (Lagos Express) or ₦0 if order > ₦50,000.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="margin-top:16px; background:#f8f9fa; padding:12px; border-radius:8px; font-size:13px; color:#495057;">
+            <strong>⚙️ Dev Logic:</strong> Render price table using ACF repeater fields. Hook into <code>woocommerce_single_product_summary</code>. Show LGA-specific delivery estimates via RouteLift API.
+        </div>
+    </div>
+
+    <!-- ============================================ -->
+    <!-- PAGE 3: CART PAGE -->
+    <!-- ============================================ -->
+    <div class="page-tab">🛒 CART PAGE</div>
+    <div class="wireframe-card">
+        <div class="grid-2col">
+            <!-- Mobile -->
+            <div class="mockup-mobile">
+                <div class="screen-title">📱 MOBILE CART</div>
+                <div class="block block-solid flex" style="justify-content:space-between;"><span>← Continue Shopping</span><span>🛒 (2 items)</span></div>
+                <!-- Cart items -->
+                <div class="block"><div class="flex"><div class="img-placeholder" style="width:50px; height:50px;">📦</div><div style="flex:1;"><strong>Indomie</strong><br>Unit: ₦430 x 10 = ₦4,300</div><div>✕</div></div><div class="flex" style="justify-content:flex-end; margin-top:4px;"><span style="border:1px solid #ccc; padding:0 12px;">- 10 +</span></div></div>
+                <div class="block"><div class="flex"><div class="img-placeholder" style="width:50px; height:50px;">📦</div><div style="flex:1;"><strong>Milo 500g</strong><br>Unit: ₦1,050 x 5 = ₦5,250</div><div>✕</div></div><div class="flex" style="justify-content:flex-end; margin-top:4px;"><span style="border:1px solid #ccc; padding:0 12px;">- 5 +</span></div></div>
+                <!-- Progress bar -->
+                <div class="block" style="background:#d3f0df;"><span style="font-size:12px;">🎯 Add ₦40,450 more for Free Delivery in Lagos</span><div style="height:6px; background:#ccc; border-radius:4px; margin-top:4px;"><div style="width:19%; height:6px; background:#2b8a3e; border-radius:4px;"></div></div></div>
+                <!-- Summary -->
+                <div class="block block-solid">
+                    <div class="flex" style="justify-content:space-between;"><span>Subtotal</span><span>₦9,550</span></div>
+                    <div class="flex" style="justify-content:space-between;"><span>Delivery (LGA: Ikeja)</span><span>₦2,500</span></div>
+                    <div class="divider"></div>
+                    <div class="flex" style="justify-content:space-between; font-weight:700; font-size:18px;"><span>Total</span><span>₦12,050</span></div>
+                    <div style="margin-top:8px;"><span class="btn green" style="width:100%; display:block; text-align:center;">Proceed to Checkout →</span></div>
+                </div>
+            </div>
+
+            <!-- Desktop -->
+            <div class="mockup-desktop">
+                <div class="screen-title">🖥️ DESKTOP CART</div>
+                <table style="width:100%; border-collapse:collapse; font-size:13px;">
+                    <tr style="border-bottom:2px solid #dee2e6;"><th style="text-align:left;">Product</th><th>Price</th><th>Qty</th><th>Subtotal</th><th></th></tr>
+                    <tr style="border-bottom:1px solid #eee;"><td><span class="flex"><span class="img-placeholder" style="width:40px; height:40px;">📦</span> Indomie (Carton)</span></td><td>₦430</td><td><span style="border:1px solid #ccc; padding:0 8px;">- 10 +</span></td><td>₦4,300</td><td>✕</td></tr>
+                    <tr style="border-bottom:1px solid #eee;"><td><span class="flex"><span class="img-placeholder" style="width:40px; height:40px;">📦</span> Milo 500g</span></td><td>₦1,050</td><td><span style="border:1px solid #ccc; padding:0 8px;">- 5 +</span></td><td>₦5,250</td><td>✕</td></tr>
+                </table>
+                <div class="block" style="background:#d3f0df; margin-top:10px;">🎯 Free Delivery at ₦50,000 – Add ₦40,450 more.</div>
+                <div class="row" style="justify-content:flex-end; margin-top:10px; background:#f1f3f5; padding:16px; border-radius:8px;">
+                    <div><span>Subtotal: ₦9,550</span><br><span>Delivery: ₦2,500</span><br><span style="font-weight:700; font-size:20px;">Total: ₦12,050</span></div>
+                    <div style="margin-left:20px;"><span class="btn green" style="padding:12px 32px;">Proceed to Checkout →</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================ -->
+    <!-- PAGE 4: CHECKOUT (CRITICAL) -->
+    <!-- ============================================ -->
+    <div class="page-tab">✅ CHECKOUT PAGE</div>
+    <div class="wireframe-card">
+        <div class="grid-2col">
+            <!-- Mobile -->
+            <div class="mockup-mobile">
+                <div class="screen-title">📱 MOBILE CHECKOUT</div>
+                <div class="block block-solid flex" style="justify-content:space-between;"><span>← Cart</span><span>🍱</span></div>
+                <div class="block"><strong>📋 Contact Info</strong><br><span style="background:#f1f3f5; display:block; padding:6px; border-radius:4px;">Full Name</span><span style="background:#f1f3f5; display:block; padding:6px; border-radius:4px; margin-top:4px;">Phone Number</span></div>
+                <div class="block"><strong>📍 Delivery Address (Lagos)</strong><br><span style="background:#f1f3f5; display:block; padding:6px; border-radius:4px;">Street / Bus stop</span><span style="background:#f1f3f5; display:block; padding:6px; border-radius:4px; margin-top:4px;">LGA (Ikeja / Surulere / etc)</span><span style="background:#f1f3f5; display:block; padding:6px; border-radius:4px; margin-top:4px;">Landmark (e.g. Opposite Shoprite)</span></div>
+                <div class="block"><strong>🚚 Delivery Speed</strong><br><span style="background:#2b8a3e20; display:inline-block; padding:4px 12px; border-radius:20px; border:2px solid #2b8a3e;">⚡ Express (Same-Day) – ₦2,500</span> <span style="background:#f1f3f5; display:inline-block; padding:4px 12px; border-radius:20px;">📦 Standard (3-5 days) – ₦1,200</span></div>
+                <div class="block"><strong>💳 Payment</strong><br><span class="badge" style="background:#1a1a2e;">💳 Card</span> <span class="badge" style="background:#1a1a2e;">🏦 Bank Transfer</span> <span class="badge" style="background:#1a1a2e;">📱 USSD</span> <span class="badge" style="background:#e67700;">💵 Cash on Delivery</span><br><span style="background:#f1f3f5; display:block; padding:6px; border-radius:4px; margin-top:6px;">🔒 Paystack iframe (card details)</span></div>
+                <div class="block block-solid" style="background:#1a1a2e; color:white; text-align:center; border: none;">
+                    <span style="font-size:12px;">Total: ₦12,050</span><br>
+                    <span style="background:#2b8a3e; display:block; padding:10px; border-radius:6px;">✔ Place Order</span>
+                </div>
+            </div>
+
+            <!-- Desktop -->
+            <div class="mockup-desktop">
+                <div class="screen-title">🖥️ DESKTOP CHECKOUT (2-column)</div>
+                <div class="row" style="align-items:flex-start;">
+                    <div style="flex:1.5;">
+                        <div class="block"><strong>📋 Billing Details</strong><br><span style="background:#f1f3f5; display:block; padding:6px;">Full Name</span><span style="background:#f1f3f5; display:block; padding:6px;">Email</span><span style="background:#f1f3f5; display:block; padding:6px;">Phone</span></div>
+                        <div class="block"><strong>📍 Shipping (Lagos)</strong><br><span style="background:#f1f3f5; display:block; padding:6px;">Street & Bus Stop</span><span style="background:#f1f3f5; display:block; padding:6px;">LGA Dropdown</span><span style="background:#f1f3f5; display:block; padding:6px;">Landmark / Nearest junction</span></div>
+                        <div class="block"><strong>💳 Payment</strong><br><span style="background:#f1f3f5; display:block; padding:6px;">🔘 Card (Paystack inline)</span><span style="background:#f1f3f5; display:block; padding:6px;">🔘 Bank Transfer</span><span style="background:#f1f3f5; display:block; padding:6px;">🔘 Cash on Delivery</span></div>
+                    </div>
+                    <div style="flex:1; background:#f1f3f5; padding:16px; border-radius:12px; position:sticky; top:20px;">
+                        <h4>🛍️ Your Order</h4>
+                        <div class="flex" style="justify-content:space-between; font-size:13px;"><span>Indomie x10</span><span>₦4,300</span></div>
+                        <div class="flex" style="justify-content:space-between; font-size:13px;"><span>Milo x5</span><span>₦5,250</span></div>
+                        <div class="divider"></div>
+                        <div class="flex" style="justify-content:space-between;"><span>Subtotal</span><span>₦9,550</span></div>
+                        <div class="flex" style="justify-content:space-between; color:#2b8a3e;"><span>🚚 Express Delivery</span><span>₦2,500</span></div>
+                        <div class="divider"></div>
+                        <div class="flex" style="justify-content:space-between; font-weight:700; font-size:20px;"><span>TOTAL</span><span>₦12,050</span></div>
+                        <span class="btn green" style="width:100%; display:block; text-align:center; margin-top:12px; padding:12px;">✔ Place Order</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="margin-top:16px; background:#f8f9fa; padding:12px; border-radius:8px; font-size:13px; color:#495057;">
+            <strong>🧩 Critical Custom Fields:</strong> Add LGA dropdown + "Landmark" text field using <code>woocommerce_checkout_fields</code> filter. Keep it single-page (no multi-step) to reduce bounce rates.
+        </div>
+    </div>
+
+    <!-- Footer note -->
+    <div style="text-align:center; padding:30px 0; color:#868e96; font-size:13px; border-top:1px solid #dee2e6; margin-top:20px;">
+        ✅ Lagos Packaged Food Store — Wireframe Sketch v1.0 • Open this in browser and print to PDF for your design reference.
+    </div>
+
+</div>
+</body>
+</html>
